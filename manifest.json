@@ -1,6 +1,6 @@
 {
 "manifest_version": 2,
-    "name": "[ZeroProcratinacao]",
+    "name": "[ZeroProcrastinacão]",
     "description": "[Extensão para evitar ficar tempo demais em sites de procrastinação.]",
     "version": "0.0.1",
     "content_scripts": [
