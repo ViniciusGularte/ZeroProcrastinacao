@@ -1,0 +1,12 @@
+{
+"manifest_version": 1,
+    "name": "[]",
+    "description": "[Extensão para evitar ficar tempo demais em sites de procrastinação.]",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+      "matches": ["<all_urls>"],
+      "js": ["filter.js"]
+    }
+  ]
+}
