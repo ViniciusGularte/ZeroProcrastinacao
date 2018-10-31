@@ -9,7 +9,7 @@ const UrlAtual = parsedUrl.href;
 //verifica array de sites proibidos :V
 SitesDeProcrastinacao.forEach(function (sites) {
   if(sites === UrlAtual){
-    alert('Você não pode acessar essa pagina, você nunca alcançara a maestria assim.. bora estudar :D');
+    alert('Você não pode acessar essa página, você nunca alcançará a maestria assim.. bora ser produtivo :D');
     history.back();
   }
 });
