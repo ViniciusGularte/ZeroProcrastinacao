@@ -11,3 +11,5 @@ Criando um extensão para barrar certos sites e evitar procrastinar :racehorse: 
 
 
 Para alterar a lista de sites para barrar, modifique a constante **SitesDeProcrastinacao** no arquivo **filter.js**
+
+<img src='https://media3.giphy.com/media/jkPTSxuolA5jy/200.gif?cid=3640f6095bd90b77713967576779890f' width='600' height='400'/>
