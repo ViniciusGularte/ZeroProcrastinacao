@@ -3,6 +3,10 @@
     "name": "[ZeroProcrastinacão]",
     "description": "[Extensão para evitar ficar tempo demais em sites de procrastinação.]",
     "version": "0.0.1",
+    "icons": {
+     "48": "icon.png",
+     "96": "icon@2x.png"
+     },
     "content_scripts": [
         {
       "matches": ["<all_urls>"],
