@@ -7,6 +7,15 @@
      "48": "icon.png",
      "96": "icon@2x.png"
      },
+     "sidebar_action": {
+        "default_icon": {
+          "16": "icon.png",
+          "32": "icon.png"
+        },
+      "default_title": "ZeroProcrastinacão",
+      "default_panel": "index.html",
+      "open_at_install":true
+    },
     "content_scripts": [
         {
       "matches": ["<all_urls>"],
