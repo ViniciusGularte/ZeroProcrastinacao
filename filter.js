@@ -1,5 +1,7 @@
 import { getInputs } from '/popup/popup.js';
 //Defina aqui os sites que você considera procrastinar
+const resposta = getInputs;
+console.table(resposta);
 const SitesDeProcrastinacao = [
 'https://www.facebook.com/','https:/www.youtube.com/','https:/www.linkedin.com/'
 ];

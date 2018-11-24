@@ -1,13 +1,13 @@
-console.log("função acessada");
-
 function getInputs(){
-  let sites = document.querySelector('.popup-content__input').value;
-  return sites;
+  let array =[];
+  const sites = document.querySelectorAll('.popup-content__input');
+  for (i = 0; i < sites.length; ++i) {
+    array = [sites[i].value];
+  }
 }
 function addInputs(){
   const template = `<input class="popup-content__input" placeholder="Site"/>`;
   document.querySelector('#popup-content').insertAdjacentHTML('beforeend',template);
 }
-console.log(getInputs());
 document.querySelector('#addInputs').onclick = addInputs;
 export { getInputs };
