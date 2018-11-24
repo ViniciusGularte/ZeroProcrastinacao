@@ -1,4 +1,4 @@
-console.log('Rodando aplicação');
+import { getInputs } from '/popup/popup.js';
 //Defina aqui os sites que você considera procrastinar
 const SitesDeProcrastinacao = [
 'https://www.facebook.com/','https:/www.youtube.com/','https:/www.linkedin.com/'
