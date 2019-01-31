@@ -5,9 +5,8 @@ const SitesDeProcrastinacao = [
 //Defina aqui sua frase motivacional
 const fraseMotivacional = 'Você não pode acessar essa página, você nunca alcançará a maestria assim.. bora ser produtivo :D'
 
-var parsedUrl = new URL(window.location.href)
 //Url atual
-const UrlAtual = parsedUrl.href
+const UrlAtual = window.location.href
 //verifica array de sites proibidos :V
 SitesDeProcrastinacao.forEach(function (sites) {
   if(UrlAtual.includes(sites)){
