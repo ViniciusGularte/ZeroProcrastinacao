@@ -7,6 +7,7 @@ const fraseMotivacional = 'Você não pode acessar essa página, você nunca alc
 
 //Url atual
 const UrlAtual = window.location.href
+
 //verifica array de sites proibidos :V
 SitesDeProcrastinacao.forEach(function (sites) {
   if(UrlAtual.includes(sites)){
