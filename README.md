@@ -1,6 +1,7 @@
+<p align="center"><img src="icons/icon.png" width=200 height=200/></p>
+
 # ZeroProcrastinacão
 Criando um extensão para barrar certos sites e evitar procrastinar :racehorse: :alarm_clock:
-
 
 ### Instalação :hammer:
 
@@ -8,7 +9,7 @@ Criando um extensão para barrar certos sites e evitar procrastinar :racehorse: 
 <li>    Extraia o arquivo zipado
 
 ### Instalação Google Chrome :crystal_ball:
-  
+
 <li>    Na aba do navegador, digite chrome://extensions
 <li>    Clique em Load Unpack, selecione a pasta ZeroProcrastinacao e dê ok
 
