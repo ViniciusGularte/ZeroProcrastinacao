@@ -19,7 +19,7 @@ fetch('https://quotes.rest/qod.json')
           alert(fraseMotivacionalPersonalizada)
       }
       else{
-        alert(`${fraseMotivacional} \n \n ${fraseMotivacionalAutor}`)
+          alert(`${fraseMotivacional} \n \n ${fraseMotivacionalAutor}`)
       }
 
       history.back()
