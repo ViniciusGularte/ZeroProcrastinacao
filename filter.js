@@ -2,16 +2,28 @@
 const SitesDeProcrastinacao = [
 'www.facebook.com','www.youtube.com','www.linkedin.com'
 ];
-//Defina aqui sua frase motivacional
-const fraseMotivacional = 'Você não pode acessar essa página, você nunca alcançará a maestria assim.. bora ser produtivo :D'
+//Defina aqui sua frase motivacional ou deixe a api puxar a frase do dia
+const fraseMotivacionalPersonalizada = ""
 
-//Url atual
-const UrlAtual = window.location.href
+fetch('https://quotes.rest/qod.json')
+.then(response => response.json())
+.then(data => {
+  const fraseMotivacional = data.contents.quotes[0].quote
+  const fraseMotivacionalAutor = data.contents.quotes[0].author
+  //Url atual
+  const UrlAtual = window.location.href
+  //verifica array de sites proibidos :V
+  SitesDeProcrastinacao.forEach(function (sites) {
+    if(UrlAtual.includes(sites)){
+      if(fraseMotivacionalPersonalizada){
+          alert(fraseMotivacionalPersonalizada)
+      }
+      else{
+        alert(`${fraseMotivacional} \n \n ${fraseMotivacionalAutor}`)
+      }
 
-//verifica array de sites proibidos :V
-SitesDeProcrastinacao.forEach(function (sites) {
-  if(UrlAtual.includes(sites)){
-    alert(fraseMotivacional)
-    history.back()
-  }
-});
+      history.back()
+    }
+  });
+})
+.catch(error => console.error(error))
